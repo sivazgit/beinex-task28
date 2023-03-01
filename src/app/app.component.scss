@@ -1,0 +1,47 @@
+@import '/src/assets/scss/variables';
+@import '/src/assets/scss/mixins';
+@import '/src/assets/scss/base';
+
+.navbar.navbar-expand-lg{
+    padding: 15px;
+    background-color:skyblue;
+    .container{
+        ul{
+            margin: auto;
+            li{
+                a{
+                    color: $color-secondary;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $color-primary;
+                    }                   
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.footer{
+    margin-top: auto;
+    background-color: $color-bhead;
+    p{
+        color: cornflowerblue;
+        text-align: center;
+    }
+
+    .icons{
+        display:flex;
+        margin-left: 580px;
+        margin-right: 580px;
+        div{ 
+            
+            img{
+                background-color: aqua;
+                margin: 5px;
+            }
+        }
+    }
+}
