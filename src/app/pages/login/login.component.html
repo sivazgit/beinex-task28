@@ -4,14 +4,14 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4 col-sm-12">
                 <div class="form">
-                    <form [formGroup]="loginForm" >
-                        <div class="inputs" formControlName="username" name="username">
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+                        <div class="inputs">
                             <label for="">Username  </label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" formControlName="username" name="username">
                         </div>
                         <div class="inputs">
                             <label for="">Password </label>
-                            <input type="text" class="form-control" formControlName="password" name="password">
+                            <input type="password" class="form-control" formControlName="password" name="password">
                         </div>
                         <button class="btn btn-primary">Log In</button>
                     </form>
